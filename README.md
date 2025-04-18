@@ -11,7 +11,7 @@ Create a new key pair in the Lambda console and download the `.pem` file.
 ### Create Instance
 
 Launch GPU instance on Lambda (https://lambda.ai/)
-- Select instance 1x A6000 (48GB GPU)
+- Select instance, e.g. 1x A6000 (48GB GPU)
 - Select region
 - Don't attach a filesystem
 - Select your SSH key
@@ -26,7 +26,7 @@ Logon to the instance using SSH. The default username is `ubuntu`.
 ssh -i lambda.pem ubuntu@<ip-address>
 ```
 
-You can choose between a local Lilypad development environment with or without a private Docker registry.
+You can choose between a local Lilypad development environment with or without a local Docker registry.
 
 #### With local Docker registry
 This option allows you to host your own Docker images for module building purposes. You can use the `lilypad-local-stack.sh` setup to include the registry in the setup.
@@ -38,7 +38,7 @@ chmod +x lilypad-local-stack.sh
 ```
 
 #### Without local Docker registry
-This option is suitable for testing and development purposes. You can use the `lilypad-local-stack-no-registry.sh` setup to build and run images locally on your instance. Images can be pushed and pulled from the Docker Hub or any other public registry.
+This option is suitable for general testing and development purposes. You can use the `lilypad-local-stack-no-registry.sh` setup to build and run modules on your instance. Images can be pushed and pulled from the Docker Hub or any other public registry.
 
 ```
 wget https://raw.githubusercontent.com/rhochmayr/lilypad-local-stack/main/lilypad-local-stack.sh

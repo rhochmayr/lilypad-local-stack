@@ -1,5 +1,4 @@
 #!/bin/bash
-# filepath: f:\lp-scripts\lilypad-setup.sh
 
 set -e
 

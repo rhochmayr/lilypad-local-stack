@@ -41,7 +41,7 @@ chmod +x lilypad-local-stack.sh
 This option is suitable for general testing and development purposes. You can use the `lilypad-local-stack-no-registry.sh` setup to build and run modules on your instance. Images can be pushed and pulled from the Docker Hub or any other public registry.
 
 ```
-wget https://raw.githubusercontent.com/rhochmayr/lilypad-local-stack/main/lilypad-local-stack.sh
+wget https://raw.githubusercontent.com/rhochmayr/lilypad-local-stack/main/lilypad-local-stack-no-registry.sh
 chmod +x lilypad-local-stack-no-registry.sh
 ./lilypad-local-stack-no-registry.sh
 ```

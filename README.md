@@ -1,6 +1,6 @@
 # Lilypad Local Stack
 
-This guide should help with the set up of a Lilypad development environment on supported GPU cloud providers, to help with module building where hardware requirements exceed local capabilities.
+This guide should help with the set up of a Lilypad development environment on supported GPU cloud providers. The aim is to assist with module building where hardware requirements exceed local capabilities.
 
 ## Lambda.ai
 
